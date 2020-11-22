@@ -1,14 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.css";
+import reportWebVitals from "./reportWebVitals";
+import Profile from "./components/User/Profile";
 
-ReactDOM.render(
+/* ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+);
+ */
+const user = {
+    firstName: "Thinh",
+    lastName: "Le",
+    age: 24,
+    gender: "Male",
+    company: "Visual weber co.ltd...",
+    study: "Nong Lam University",
+    favorite: "Coding, Game",
+};
+ReactDOM.render(
+    <React.StrictMode>
+        <Profile user={user} />
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
