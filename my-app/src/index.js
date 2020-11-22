@@ -4,13 +4,6 @@ import "./App.css";
 import reportWebVitals from "./reportWebVitals";
 import Profile from "./components/User/Profile";
 
-/* ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
- */
 const user = {
     firstName: "Thinh",
     lastName: "Le",
